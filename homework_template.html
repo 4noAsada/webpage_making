@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>box-shadow & box-sizing</title>
+    <style type="text/css">
+        div.container {
+            display: flex;
+            justify-content: center;
+        }
+        .test {
+            height: 100px;
+            width: 100px;
+            border-style: solid;
+            margin: 10px;
+            text-align: center;
+            box-shadow: 10px 5px gray;
+        }
+
+        .with-box-sizing {
+            box-sizing: border-box;
+        }
+
+        #without-box-sizing-g2 {
+            padding: 10px;
+        }
+
+        #with-box-sizing-g2 {
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="test without-box-sizing" id="without-box-sizing-g1">
+        <span>TEST TEXT</span>
+    </div>
+    <div class="test without-box-sizing" id="without-box-sizing-g2">
+        <span>TEST TEXT</span>
+    </div>
+</div>
+<div class="container">
+    <div class="test with-box-sizing" id="with-box-sizing-g1">
+        <span>TEST TEXT</span>
+    </div>
+    <div class="test with-box-sizing" id="with-box-sizing-g2">
+        <span>TEST TEXT</span>
+    </div>
+</div>
+
+</body>
+</html>
