@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绝对定位和相对定位</title>
+    <style type="text/css">
+        div {
+            height: 100px;
+            width: 100px;
+            border: solid red;
+            margin-top: 20px;
+        }
+        div.default-positioning {
+            left: 20px; /* 啥都不会发生 */
+        }
+        div.relative-positioning {
+            position: relative;
+            left: 20px; /* 向右位移20px */
+        }
+
+        /* absolute相对于祖先tag放置 */
+        div.absolute-positioning {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: 40px;
+            left: 70px;
+            border-color: blue;
+        }
+    </style>
+</head>
+<body>
+<!--    默认position属性值为static-->
+    <div class="default-positioning">
+
+    </div>
+    <div class="relative-positioning">
+        <div class="absolute-positioning">
+
+        </div>
+    </div>
+</body>
+</html>
